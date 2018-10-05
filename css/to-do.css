@@ -1,0 +1,224 @@
+@font-face {
+  font-family:'Poppins-Medium';
+  src: url(../webfonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family:'Poppins-Bold';
+    src: url(../webfonts/Poppins/Poppins-Bold.ttf);
+  }
+  @font-face {
+    font-family:'Poppins-Light';
+    src: url(../webfonts/Poppins/Poppins-Light.ttf);
+  }
+  @font-face {
+    font-family:'Poppins-Regular';
+    src: url(../webfonts/Poppins/Poppins-Regular.ttf);
+  }
+
+  @media (max-width:500px){
+      .container{
+      }
+    .head{
+        display: grid !important;
+    }
+    .head h1{
+        width: 100% !important;
+        font-size: 30px !important;
+        margin:0px 100px !important;
+    }
+    .head img{
+        margin:auto;
+        width: 60% !important;
+    }
+   .notes{
+     display: grid !important;
+   }
+   .note{
+    margin:20px auto !important;
+   }
+  }
+
+
+body{
+    margin: 0px;
+    background-color: #EFEFEF;
+}
+.container{
+    margin: auto;
+}
+.head{
+    width: 100%;
+    height: 184px;
+    display: inline-flex;
+    background-color: #8A7CC5;
+    padding-top: 40px;
+    box-shadow:0px 7px 6px #50505033;
+}
+.head h1{
+    width: 40%;
+    color: #FFFFFF;
+    font-family: 'Poppins-Medium';
+    margin: 40px 100px;
+    font-size: 40px;
+}
+.head img{
+    width: 50%;
+    height: 194px;
+    margin-right: 135px;
+}
+
+
+.all{
+    display: grid;
+    margin: auto;
+    width: 85%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.notes{
+    display: flex;
+    margin-bottom: 37px;
+}
+.all .note{
+    width: 350px;
+    height: 300px;
+    box-shadow: 0px 3px 6px #0000004f;
+}
+.all .note .top{
+    padding: 13px 0px 25px 40px;
+    border-bottom: 1px solid #6666;
+}
+.all .note .top h2,
+.all .note .top input {
+    margin-bottom: 10px;
+    margin-top: 18px;
+    width: 90%;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    background-color: unset;
+    font-family: 'Poppins-Bold';
+}
+input::placeholder{
+    color: #333333;
+}
+#main input::placeholder{
+    color: #CFCFCF;
+}
+.all .note .top small{
+    color: #00000073;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Poppins-Light';
+}
+.all .note .bottom{
+    padding: 0px 40px;
+    margin-top: 20px;
+}
+.all .note .bottom p,
+.all .note .bottom textarea{
+    color: #0000009c;
+    border: none;
+    margin: auto;
+    width: 282px;
+    height: 117px;
+    font-size: 16px;
+    background-color: unset;
+    font-family: 'Poppins-Regular';
+}
+.all .note .tools{
+    text-align: center;
+}
+.all .note .tools span{
+    font-size: 21px;
+    color: #00000040;
+    padding: 0px 25px;
+    cursor: pointer;
+}
+.all .note .tools span:hover{
+    color: #0000009c;
+}
+
+
+#main{
+    background-color: #FFFFFF;
+}
+#main h2{
+    color: #CFCFCF;
+}
+#main small{
+    color: #00000073;
+}
+#main p{
+    color: #9F9F9F;
+}
+#white{
+    background-color: #FFFFFF;
+    margin: 0px 48px;
+}
+#blue{
+    background-color: #BCE0FF;
+    margin: 0px 48px;
+}
+#yellow{
+    background-color: #FFEDA5;
+    margin: 0px 48px;
+}
+#red{
+    background-color: #FFB2B2;
+    margin: 0px 48px;
+}
+#purple{
+    background-color: #B0A4E6;
+    margin: 0px 48px;
+}
+
+
+.footer h3{
+    text-align: center;
+    color: #616161;
+    margin-bottom: 50px;
+    font-family: 'Poppins-Light';
+}
+.footer span{
+    color: #1887E8;
+    font-family: 'Poppins-Medium';
+}
+.changeColor{
+  width: 160px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: -80px;
+  left: 60px;
+  box-shadow: 1px 1px 2px #888, -1px -1px 2px #888;
+  display: none;
+}
+.white.Circle,.blue.Circle,.yellow.Circle,.red.Circle,.purple.Circle{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 4px;
+  background-color: red;
+  float: left;
+  position: relative;
+  top: 10px;
+  left: 4px;
+}
+.white.Circle{
+    background-color: #FFFFFF;
+}
+.blue.Circle{
+    background-color: #BCE0FF;
+}
+.yellow.Circle{
+    background-color: #FFEDA5;
+}
+.red.Circle{
+    background-color: #FFB2B2;
+}
+.purple.Circle{
+    background-color: #B0A4E6;
+}
